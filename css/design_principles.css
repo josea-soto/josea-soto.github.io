@@ -1,0 +1,49 @@
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    font-size: 1.5vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    margin: 0 6vw;
+    color: #023047;
+}
+
+img {
+    width: 30vw;
+    padding: 5vw
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
+
+h1 {
+    background: #023047;
+    padding: 2vw 2vw 2vw 10vw;
+    border-radius: 1vw;
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 4vw;
+    color: white;
+}
+
+h2 {
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 3vw;
+    color: #ffb703;
+}
+
+
+img {
+    width: 32vw;
+    right: 4vw;
+    top: 8vw;
+}
+
+footer {
+    background: #023047;
+    padding: 2vw 2vw 2vw 10vw;
+    margin: 2vw;
+    border-radius: 1vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+}
