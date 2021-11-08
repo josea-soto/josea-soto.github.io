@@ -14,12 +14,12 @@ section {
     border-radius: 1vw;
     text-align: justify;
     height: fit-content;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(2, 48, 71, 0.4);
     transition: 0.3s;
 }
 
 .section:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(2, 48, 71, 0.4);
 }
 
 
@@ -90,7 +90,7 @@ li {
     a,
     p {
         font-family: Roboto, 'Open Sans', sans-serif;
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
 
 }
@@ -104,6 +104,6 @@ li {
     a,
     p {
         font-family: Roboto, 'Open Sans', sans-serif;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
