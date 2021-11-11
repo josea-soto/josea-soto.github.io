@@ -69,7 +69,7 @@ ul {
     text-align: center;
     color: #023047;
     background-color: rgb(255, 183, 3, 0.5);
-    border: 0.4vw solid black;
+    border: 0.2vw solid black;
     margin: 0;
     padding: 0;
 }
@@ -110,11 +110,13 @@ footer a:visited {
 }
 
 table {
-    margin: 2vw;
+    margin: 2vw 0 4vw 0;
     font-family: Roboto, 'Open Sans', sans-serif;
     border-spacing: 0;
     border-collapse: collapse;
     letter-spacing: 0.1vw;
+    width: 80vw;
+    align-self: center;
 }
 
 th {
@@ -122,10 +124,16 @@ th {
     font-size: 1.5vw;
 }
 
+
 td {
+    padding: 0 2vw;
+    border: 0.15vw solid black;
+    font-size: 1.5vw;
+}
+
+.colors td {
     padding: 2vw;
-    border: 0.3vw solid black;
-    /* font-weight: bold; */
+    border: 0.15vw solid black;
     font-size: 1.5vw;
 }
 
@@ -177,6 +185,7 @@ td {
 
 #header-sample h1 {
     font-size: 4vw;
+    margin: 1vw;
 }
 
 #nav-sample {
@@ -186,6 +195,7 @@ td {
 
 #nav-sample h1 {
     font-size: 1.5vw;
+    margin: 1vw;
 }
 
 #footer-nav {
@@ -207,6 +217,7 @@ td {
 
 #subhead-h1 h1 {
     font-size: 4vw;
+    margin: 1vw;
 }
 
 #subhead-h2 {
