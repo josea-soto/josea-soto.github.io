@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
+
+img {
+    width: 9vw;
+    height: 9vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #023047;
+    color: whitesmoke;
+
+}
+
+.name-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4vw 0 0 0;
+}
+
+header h1 {
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 4vw;
+    margin: 0 2vw;
+    width: 15vw;
+}
+
+header h2 {
+    width: fit-content;
+    margin: 0 2vw 2vw 0;
+    align-self: center;
+    padding: 1vw 2vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    color: white;
+}
+
+header h3 {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    width: 100%;
+    background: #ffb703;
+    margin: 0;
+    color: black;
+    padding: 1vw 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    color: #023047;
+    background-color: rgb(255, 183, 3, 0.5);
+    border: 0.4vw solid black;
+    padding: 2vw;
+    margin: 0;
+}
+
+footer {
+    background: #023047;
+    padding: 2vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:visited {
+    color: #fb8500;
+}
+
+#attribution {
+    font-size: 1vw;
+}
