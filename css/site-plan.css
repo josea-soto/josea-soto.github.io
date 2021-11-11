@@ -250,6 +250,11 @@ td {
     background-color: #ffb703;
 }
 
+#scenarios {
+    font-size: 1.5vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-weight: normal;
+}
 
 @media (max-width: 500px) {
     ul {
