@@ -225,3 +225,9 @@ td {
 .priority1 {
     font-family: Comfortaa, 'Open Sans', sans-serif;
 }
+
+#audience {
+    margin: 4vw;
+    text-align: justify;
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
