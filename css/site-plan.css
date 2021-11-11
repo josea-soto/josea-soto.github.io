@@ -249,3 +249,15 @@ td {
 .selected-page {
     background-color: #ffb703;
 }
+
+
+@media (max-width: 500px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+        font-size: 3vw;
+    }
+}
