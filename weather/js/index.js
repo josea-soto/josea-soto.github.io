@@ -7,6 +7,10 @@ setTimeout(() => {
 
     document.querySelector("#current-year").textContent +=  currentYear 
     document.querySelector("#last-updated").textContent = days[date.getDay()] + ", " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear(); 
+
+    if (date.getDay() != 5) {
+        document.getElementById("banner").style.display = "none"
+    }
 }, 10)
 
 

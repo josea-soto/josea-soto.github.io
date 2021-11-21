@@ -121,7 +121,7 @@
 
     .weather-summary,
     .contact {
-        text-align: left;
+        text-align: center;
     }
 
     .weather-summary {
@@ -134,7 +134,7 @@
     .social {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: center;
     }
 
 }

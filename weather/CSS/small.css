@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
 
+#banner {
+    font-size: 1.3vw;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    width: 100%;
+    background: #ffb703;
+    margin: 0;
+    color: black;
+    padding: 1vw 0;
+}
+
 .name-logo img {
     width: 55px;
     height: 55px;
@@ -67,6 +78,10 @@ h3 {
 a {
     text-decoration: none;
     color: black;
+}
+
+li:hover {
+    background-color: #8ECAE6;
 }
 
 ul {
