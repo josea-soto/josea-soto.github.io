@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
+
+.name-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #023047;
+    color: white;
+}
+
+.name-logo {
+    display: flex;
+    flex-direction: row;
+    padding: 4vw;
+}
+
+#menu-logo {
+    position: absolute;
+    width: 50px;
+    right: 4vw;
+    top: 4vw;
+}
+
+body {
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+header h1 {
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 0 2vw;
+    width: 15vw;
+}
+
+header h2 {
+    display: none;
+}
+
+header h3 {
+    font-size: 1.3vw;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    width: 100%;
+    background: #ffb703;
+    margin: 0;
+    color: black;
+    padding: 1vw 0;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    color: #023047;
+    background-color: rgb(255, 183, 3, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.7em;
+    font-size: 1em;
+}
+
+footer {
+    background: #023047;
+    padding: 2vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:visited {
+    color: #fb8500;
+}
+
+table {
+    margin: 4vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    border-spacing: 0;
+    border-collapse: collapse;
+    letter-spacing: 0.1vw;
+    width: 80vw;
+    align-self: center;
+}
+
+th {
+    line-height: 4vw;
+    font-size: 1.5vw;
+}
+
+
+td {
+    padding: 0 2vw;
+    border: 0.15vw solid black;
+    font-size: 1.5vw;
+}
+
+#footer-nav {
+    color: #FFFFFF;
+    background-color: #023047;
+    margin: 0;
+    font-weight: normal;
+}
+
+#footer-nav p {
+    font-size: 1.5vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+.priority1 {
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+}
+
+.selected-page {
+    background-color: #ffb703;
+}
+
+img {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* .weather-summary {
+    padding: 4vw;
+} */
+
+.weather-summary,
+.forecast,
+.contact {
+    margin: 4vw;
+    padding: 4vw;
+    box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
+    text-align: center
+}
+
+.forecast {
+    /* background-color: rgb(142, 202, 230, 0.4); */
+    /* background-color: rgb(255, 183, 3, 0.2); */
+}
+
+.article {
+    /* padding: 0 4vw; */
+    text-align: justify;
+}
+
+.attribution {
+    margin-top: 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+#forecast-table {
+    display: none;
+}
+
+.contact {
+    padding: 4vw;
+}
+
+nav ul.show-menu {
+    display: flex;
+}
+
+.weather-summary {
+    text-align: center;
+}

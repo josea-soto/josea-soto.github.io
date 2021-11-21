@@ -16,14 +16,12 @@
     }
 
     ul {
-        display: flex;
         flex-direction: row;
     }
 
     li {
         width: 25vw;
         font-size: 1.5vw;
-        padding: 2vw;
     }
 
     .contact-information {
@@ -36,7 +34,6 @@
     }
 
     header h2 {
-        display: block;
         font-size: 1.5vw;
         align-self: center;
         width: fit-content;
@@ -61,7 +58,7 @@
     }
 
     li {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 
     footer {
@@ -82,16 +79,5 @@
 
     .attribution {
         font-size: 10px;
-    }
-
-    .weather-summary,
-    .contact {
-        text-align: left;
-    }
-
-    .social {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
     }
 }

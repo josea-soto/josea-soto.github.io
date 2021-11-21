@@ -21,14 +21,15 @@
 <body>
     <header>
         <div class="name-logo">
-            <img src="/images/weather-news.png" alt="A placeholder image">
+            <img src="images/weather-news.png" alt="Cloudy County Logo">
             <h1>Cloudy County</h1>
         </div>
         <h2>Don't go out without an umbrella !</h2>
+        <img id="menu-logo" onclick="toggleMenu()" src="images/menu.svg" alt="Menu Logo">
     </header>
 
     <nav>
-        <ul>
+        <ul id="nav-list">
             <li><a href="#" class="active">Home</a></li>
             <li class="selected-page"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -44,15 +45,15 @@
                 Preston Idaho
             </h2>
         </div>
-        <div class="weather-summary">
-            <picture class="total-image">
-                <source srcset="images/original_small.jpeg" media="(max-width: 4000px)">
+        <div>
+            <picture class="original-image">
+                <source srcset="images/original_small.jpeg" media="(max-width: 400px)">
                 <source srcset="images/original_medium.jpeg" media="(max-width: 800px)">
                 <source srcset="images/original_large.jpeg" media="(max-width: 1500px)">
                 <img src="images/original_large.jpeg" alt="Clouds over the mountains">
             </picture>
             <section class="weather-summary">
-                <h3>Weather Summary</h3>
+                <h2>Weather Summary</h2>
                 <p>Currently: <span id="temperature">38</span>°F</p>
                 <p>Wind Chill: <span id="windchill">34</span>°F</p>
                 <p>High: 41°F</p>
@@ -60,11 +61,11 @@
                 <p>Wind Speed: <span id="windspeed">5</span>mph</p>
             </section>
         </div>
-        <div class="day-forecast">
+        <div class="forecast">
             <h2>
-                Seven Day Forecast
+                Five Day Forecast
             </h2>
-            <div id="flex">
+            <div id="forecast-table">
                 <div>Icons made by <a href="https://www.flaticon.com/authors/kosonicon" title="kosonicon">kosonicon</a>
                     from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
@@ -104,39 +105,49 @@
                     <span class="data">10°C</span>
                 </div>
             </div>
+
+            <div class="article">
+                <h3>Weather forecast for the Grand Prix</h3>
+                <p>
+                    The Prix returns for the first time since 2019, continuing this enthralling title fight between
+                    Lewis
+                    Hamilton and Max Verstappen – but what does the weather have in store for the drivers and teams this
+                    weekend?
+
+                    The historic racetrack hosts its 21st Grand Prix this weekend, a high-altitude challenge facing the
+                    teams as
+                    we enter the last five rounds of the 2021 championship.
+
+                    The weather this weekend is set fair as the formerly slim risk of rain on Sunday has diminished to
+                    0%.
+                    Scroll down for the full forecast.
+                </p>
+                <img class="article-img" src="images/grand_prix.jpg" alt="Mexico City Grand Prix">
+                <p class="attribution">
+                    Photo by <a
+                        href="https://unsplash.com/@jpvalery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jp
+                        Valery</a> on <a
+                        href="https://unsplash.com/s/photos/grand-prix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+
+
         </div>
-        <div class="article">
-            <h2>Weather forecast for the Grand Prix</h2>
-            <img class="article-img" src="images/grand_prix.jpg" alt="Mexico City Grand Prix">
-
-            Photo by <a
-                href="https://unsplash.com/@jpvalery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jp
-                Valery</a> on <a
-                href="https://unsplash.com/s/photos/grand-prix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-            <p>
-                The Prix returns for the first time since 2019, continuing this enthralling title fight between Lewis
-                Hamilton and Max Verstappen – but what does the weather have in store for the drivers and teams this
-                weekend?
-
-                The historic racetrack hosts its 21st Grand Prix this weekend, a high-altitude challenge facing the
-                teams as
-                we enter the last five rounds of the 2021 championship.
-
-                The weather this weekend is set fair as the formerly slim risk of rain on Sunday has diminished to 0%.
-                Scroll down for the full forecast.
-            </p>
-        </div>
-
         <div class="contact-information">
             <section class="contact">
-                <h3>
+                <h2>
                     Contact Information
-                </h3>
+                </h2>
                 <div>
-                    <br>Jose Alberto Soto
-                    <br>+52 1 (55) 1309 3528
-                    <br>sot21004@byui.edu
+                    <p>
+                        Jose Alberto Soto
+                    </p>
+                    <p>
+                        +52 1 (55) 1309 3528
+                    </p>
+                    <p>
+                        sot21004@byui.edu
+                    </p>
                 </div>
                 <div class="social">
                     <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook icon"></a>
@@ -154,167 +165,12 @@
         <p><span id="current-year"> &copy; </span> | Jose A. Soto | Mexico City | <a
                 href="https://www.byui.edu/online">BYUI Online Learning</a></p>
         <p id="last-updated">Last Updated: </p>
-        <div id="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+        <div class="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
-    <script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- 
-
-<html lang="en-us">
-
-
-<body class="vsc-initialized">
-    <div id="banner" style="display: none;">
-        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
-
-    <header>
-        <picture>
-            <img class="logo-image" src="./images/1530371_weather_clouds_snow_winter_icon.png" alt="Logo image">
-        </picture>
-        <section class="headings">
-            <h1 class="site-name">Weather for Lovers</h1>
-            <div class="motto">For sky people</div>
-        </section>
-
-    </header>
-
-
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">☰</button>
-        <ul id="primaryNav" class="hide">
-            <li><a class="btn" href="#">Home</a></li>
-            <li><a class="btn" href="preston.html">Preston</a></li>
-            <li><a class="btn active" href="#">Soda Springs</a></li>
-            <li><a class="btn" href="#">Fish Haven</a></li>
-            <li><a class="btn" href="#">Storm Center</a></li>
-            <li><a class="btn" href="#">Gallery</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="home-title">
-            <h2>
-                Preston Idaho
-            </h2>
-        </div>
-        <div class="first-section">
-            <picture class="total-image">
-                <source srcset="./images/small.jpg" media="(max-width: 380px)">
-                <source srcset="./images/medium.jpg" media="(max-width: 700px)">
-                <source srcset="./images/large.jpg" media="(max-width: 1500px)">
-                <img src="./images/original.jpg" alt="Thunderstorm image">
-
-            </picture>
-            <section class="weather-summary">
-                <h3>Weather Summary</h3>
-                <p>Currently: <span id="temperature">38</span>°F</p>
-                <p>Wind Chill: <span id="windchill">31.16</span></p>
-                <p>High: 41°F</p>
-                <p>Humidity: 50%</p>
-                <p>Wind Speed: <span id="windspeed">10</span>mph</p>
-            </section>
-        </div>
-        <div class="day-forcast">
-            <h2>
-                Seven Day Forecast
-            </h2>
-            <div id="flex">
-                <div class="flex-col">
-                    <span class="col-head">Monday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">5°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Tuesday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Wednesday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Thursday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Friday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Saturday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Sunday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-            </div>
-        </div>
-        <div class="text">
-            <h2>Article Title</h2>
-            <img class="article-img" src="images/flash-2660929_960_720-min.jpg" alt="Thunderstorm">Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Ut porta ipsum eget nunc faucibus euismod.
-            Aenean massa turpis, cursus sed urna nec, gravida interdum enim. Sed at aliquam nisl, at rutrum quam.
-            Mauris luctus pretium mi, at accumsan nunc tristique at. Duis mauris arcu, fringilla nec tincidunt non,
-            molestie in massa. Nam nec enim eu mi volutpat elementum quis varius nulla. Integer consectetur vitae
-            quam in venenatis. Nullam vestibulum volutpat vulputate. Nullam in imperdiet nunc. Donec sed augue
-            malesuada,
-            laoreet lorem in, dapibus nulla. Praesent aliquam vulputate massa, in congue ipsum varius quis. Donec
-            sodales
-            scelerisque laoreet.
-        </div>
-        <div class="contact-info">
-            <section class="contact">
-                <h3>
-                    Contact Information
-                </h3>
-                <div>
-                    <br>Lia Roxana Ayos
-                    <br>+57 3024624578
-                    <br>roxana_ayos@byui.edu
-                </div>
-                <div class="social">
-                    <a href="https://es-la.facebook.com/" target="_blank"><img src="./images/facebook.png"
-                            alt="Facebook icon"></a>
-                    <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img src="./images/twitter.png"
-                            alt="twiter icon"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png"
-                            alt="Youtube icon"></a>
-                </div>
-            </section>
-            <picture class="map">
-                <img src="./images/map.PNG" alt="map">
-            </picture>
-        </div>
-    </main>
-    <footer>
-        <p id="copyright">© <span id="dayweek">Saturday,</span> 20, <span id="month">November,</span> 2021<a
-                href="https://www.byui.edu/online"> BYU Online
-                Learning</a></p>
-        <p id="lastModified"></p>
-    </footer>
-
-    <script src="./js/dates.js"></script>
-    <script src="./js/scripts.js"></script>
-    <script src="./js/windchill.js"></script>
-
-
-</body>
-
-</html> -->
