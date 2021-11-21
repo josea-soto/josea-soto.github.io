@@ -1,4 +1,8 @@
 @media (min-width: 500px) {
+    body {
+        font-size: 1.5vw;
+    }
+
     .name-logo {
         display: flex;
         flex-direction: row;
@@ -27,7 +31,18 @@
     }
 
     .contact-information {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 1.5vw;
+    }
+
+    .contact-information picture {
+        width: 50vw;
+    }
+
+    .contact-information .social img {
+        width: 5vw;
+        height: 5vw;
     }
 
     header h1 {
@@ -56,6 +71,10 @@
         text-align: center;
     }
 
+    h2 {
+        font-size: 3vw;
+    }
+
     h3 {
         font-size: 1em;
     }
@@ -80,13 +99,36 @@
         font-size: 1.5vw;
     }
 
-    .attribution {
-        font-size: 10px;
+
+    #forecast-table {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4vw 0;
+    }
+
+    .forecast-day {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forecast-day img {
+        width: 6vw;
+        height: 6vw;
+        align-self: center;
+        margin: 2vw 0;
     }
 
     .weather-summary,
     .contact {
         text-align: left;
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 37vw;
+        background: white;
+        box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
     }
 
     .social {

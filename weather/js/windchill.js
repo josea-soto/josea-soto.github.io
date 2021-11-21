@@ -15,6 +15,4 @@ function windchill(){
 const temperature = parseFloat(document.getElementById("temperature").innerHTML)
 const windspeed = parseFloat(document.getElementById("windspeed").innerHTML)
 
-// setTimeout(() => {
-    document.getElementById("windchill").innerHTML = windchill(temperature, windspeed);
-// },10);
+document.getElementById("windchill").innerHTML = windchill(temperature, windspeed);

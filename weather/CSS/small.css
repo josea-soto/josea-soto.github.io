@@ -56,6 +56,10 @@ h3 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1em;
+}
+
 h3 {
     font-size: 1em;
 }
@@ -167,10 +171,16 @@ img {
 .weather-summary,
 .forecast,
 .contact-information {
+    border-radius: 8px;
     margin: 4vw;
     padding: 4vw;
     box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
     text-align: center
+}
+
+.contact-information {
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .article {
@@ -192,7 +202,8 @@ nav ul.show-menu {
 }
 
 .weather-summary {
-    text-align: center;
+    position: relative;
+    background: white;
 }
 
 @media (max-width: 225px) {
