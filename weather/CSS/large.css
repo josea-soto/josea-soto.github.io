@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
+
+img {
+    width: 9vw;
+    height: 9vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #023047;
+    color: white;
+
+}
+
+.name-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4vw 0 0 0;
+}
+
+h2,
+h3 {
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+header h1 {
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 4vw;
+    margin: 0 2vw;
+    width: 15vw;
+}
+
+header h2 {
+    width: fit-content;
+    margin: 0 2vw 2vw 0;
+    align-self: center;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    color: white;
+}
+
+header h3 {
+    font-size: 1.3vw;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    width: 100%;
+    background: #ffb703;
+    margin: 0;
+    color: black;
+    padding: 1vw 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    color: #023047;
+    background-color: rgb(255, 183, 3, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 2vw;
+    width: 25vw;
+}
+
+footer {
+    background: #023047;
+    padding: 2vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:visited {
+    color: #fb8500;
+}
+
+#purpose {
+    margin: 4vw;
+}
+
+#purpose p {
+    text-align: justify;
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+#attribution {
+    font-size: 0.7vw;
+}
+
+table {
+    margin: 4vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    border-spacing: 0;
+    border-collapse: collapse;
+    letter-spacing: 0.1vw;
+    width: 80vw;
+    align-self: center;
+}
+
+th {
+    line-height: 4vw;
+    font-size: 1.5vw;
+}
+
+
+td {
+    padding: 0 2vw;
+    border: 0.15vw solid black;
+    font-size: 1.5vw;
+}
+
+.colors td {
+    padding: 2vw;
+    border: 0.15vw solid black;
+    font-size: 1.5vw;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.colors p {
+    margin: 4vw 0 0 0;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+}
+
+.primary {
+    background-color: #023047;
+    color: white;
+}
+
+.secondary {
+    background-color: #219ebc;
+}
+
+.accent1 {
+    background-color: #8ECAE6;
+}
+
+.accent2 {
+    background-color: #ffb703;
+}
+
+.typography {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.typography>p {
+    margin: 4vw 0 0 0;
+    font-size: 1.5vw;
+}
+
+#header-sample {
+    background-color: #023047;
+    color: white;
+}
+
+#header-sample h1 {
+    font-size: 4vw;
+    margin: 1vw;
+}
+
+#nav-sample {
+    color: #023047;
+    background-color: rgb(255, 183, 3, 0.5);
+}
+
+#nav-sample h1 {
+    font-size: 1.5vw;
+    margin: 1vw;
+}
+
+#footer-nav {
+    color: #FFFFFF;
+    background-color: #023047;
+    margin: 0;
+    font-weight: normal;
+}
+
+#footer-nav p {
+    font-size: 1.5vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+#subhead-h1 {
+    background-color: #023047;
+    color: white;
+}
+
+#subhead-h1 h1 {
+    font-size: 4vw;
+    margin: 1vw;
+}
+
+#subhead-h2 {
+    color: black;
+}
+
+#subhead-h2 h2 {
+    font-size: 1.5vw;
+}
+
+#subhead-h3 {
+    background: #ffb703;
+    color: black;
+}
+
+#subhead-h3 h3 {
+    font-size: 1.3vw;
+}
+
+.priority1 {
+    font-family: Comfortaa, 'Open Sans', sans-serif;
+}
+
+#audience {
+    margin: 4vw;
+    text-align: justify;
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+.selected-page {
+    background-color: #ffb703;
+}
+
+#scenarios {
+    font-size: 1.5vw;
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+        font-size: 3vw;
+    }
+}
