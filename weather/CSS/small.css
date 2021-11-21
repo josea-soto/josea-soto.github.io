@@ -151,6 +151,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 4vw;
 }
 
 .social img {
@@ -163,27 +164,16 @@ img {
     height: 50px;
 }
 
-
-/* .weather-summary {
-    padding: 4vw;
-} */
-
 .weather-summary,
 .forecast,
-.contact {
+.contact-information {
     margin: 4vw;
     padding: 4vw;
     box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
     text-align: center
 }
 
-.forecast {
-    /* background-color: rgb(142, 202, 230, 0.4); */
-    /* background-color: rgb(255, 183, 3, 0.2); */
-}
-
 .article {
-    /* padding: 0 4vw; */
     text-align: justify;
 }
 
@@ -197,14 +187,32 @@ img {
     display: none;
 }
 
-.contact {
-    padding: 4vw;
-}
-
 nav ul.show-menu {
     display: flex;
 }
 
 .weather-summary {
     text-align: center;
+}
+
+@media (max-width: 225px) {
+    #menu-logo {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 50px;
+        align-self: center;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .name-logo {
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 90px;
+    }
+
 }
