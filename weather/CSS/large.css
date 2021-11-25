@@ -136,4 +136,8 @@
         flex-direction: row;
         justify-content: start;
     }
+
+    .gallery {
+        columns: 3;
+    }
 }

@@ -221,6 +221,29 @@ nav ul.show-menu {
     background: white;
 }
 
+.gallery {
+    columns: 1;
+    padding: 1vw;
+
+}
+
+.gallery-card {
+    margin: 1vw 0;
+    padding: 2vw;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
+    text-align: center
+}
+
+.gallery-card:hover {
+    box-shadow: 0 4px 8px 8px rgb(2 48 71 / 20%);
+}
+
+.gallery-img {
+    width: 100%;
+}
+
 @media (max-width: 225px) {
 
     .name-logo h1 {

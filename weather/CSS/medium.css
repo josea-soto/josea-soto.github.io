@@ -137,4 +137,8 @@
         justify-content: center;
     }
 
+    .gallery {
+        columns: 2;
+        padding: 20px;
+    }
 }
