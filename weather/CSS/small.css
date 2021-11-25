@@ -222,23 +222,8 @@ nav ul.show-menu {
 }
 
 @media (max-width: 225px) {
-    #menu-logo {
-        position: relative;
-        right: 0;
-        top: 0;
-        width: 50px;
-        align-self: center;
-        padding-bottom: 1em;
-        text-align: center;
-    }
 
-    .name-logo {
-        margin-top: 2em;
-        justify-content: center;
+    .name-logo h1 {
+        display: none;
     }
-
-    header h1 {
-        width: 90px;
-    }
-
 }
