@@ -141,4 +141,9 @@
         columns: 2;
         padding: 20px;
     }
+
+    .gallery-card {
+        min-width: 42vw;
+        min-height: 42vw;
+    }
 }

@@ -224,7 +224,16 @@ nav ul.show-menu {
 .gallery {
     columns: 1;
     padding: 1vw;
+}
 
+.gallery p {
+    margin-bottom: 0;
+    display: none;
+}
+
+.gallery span {
+    font-size: 0.5em;
+    display: none;
 }
 
 .gallery-card {
@@ -233,20 +242,30 @@ nav ul.show-menu {
     display: inline-block;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
-    text-align: center
-}
-
-.gallery-card:hover {
-    box-shadow: 0 4px 8px 8px rgb(2 48 71 / 20%);
+    text-align: center;
+    min-width: 94vw;
+    min-height: 45vw;
 }
 
 .gallery-img {
     width: 100%;
+    background: lightgrey;
+}
+
+.visible {
+    background: red;
 }
 
 @media (max-width: 225px) {
-
     .name-logo h1 {
         display: none;
     }
 }
+
+/* 
+
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+imagesToLoad[0].parentElement.children[1].setAttribute("class", "visible")
+
+*/
