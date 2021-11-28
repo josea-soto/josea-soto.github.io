@@ -18,5 +18,8 @@ function toggleMenu() {
     document.getElementById("nav-list").classList.toggle("show-menu");
 }
 
-
+function rateStorm(rating) {
+    console.log(rating)
+    document.getElementById("ratingvalue").innerHTML = rating;
+  }
 

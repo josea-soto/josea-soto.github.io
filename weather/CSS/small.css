@@ -256,16 +256,52 @@ nav ul.show-menu {
     background: red;
 }
 
+.card {
+    margin: 4vw;
+    border-radius: 8px;
+    text-align: center
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#danger-options {
+    padding-top: 0;
+}
+
+#danger-options div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#submit-btn {
+    display: block;
+    margin: 4vw auto;
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    background: #023047;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+input,
+select,
+textarea {
+    margin: 2vw 0 0 2vw;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+}
+
+.page-title {
+    text-align: center;
+}
+
 @media (max-width: 225px) {
     .name-logo h1 {
         display: none;
     }
 }
-
-/* 
-
-const imagesToLoad = document.querySelectorAll("img[data-src]");
-
-imagesToLoad[0].parentElement.children[1].setAttribute("class", "visible")
-
-*/

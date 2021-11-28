@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Storm reporting. WDD 230: Web Frontend Development at Brigham Young University Idaho">
+    <title>Preston Town Page Start</title>
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- phone -->
+    <link href="CSS/small.css" rel="stylesheet">
+    <!-- tablet -->
+    <link href="CSS/medium.css" rel="stylesheet">
+    <!-- wide desktop -->
+    <link href="CSS/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p id="banner">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        <div class="name-logo">
+            <img src="images/weather-news.png" alt="Cloudy County Logo">
+            <h1>Cloudy County</h1>
+        </div>
+        <h2>Don't go out without an umbrella !</h2>
+        <img id="menu-logo" onclick="toggleMenu()" src="images/menu.svg" alt="Menu Logo">
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="preston.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="selected-page"><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-title">
+            <h2>
+                Report a storm
+            </h2>
+        </div>
+
+
+        <form method="get" action="thanks.html">
+            <fieldset name="applicant-info" class="card">
+                <legend>&emsp;Personal Information&emsp;</legend>
+                <label>Full Name* <input type="text" name="fullname" pattern="[A-Z a-z]{5,}" title="fullname"
+                        required=""></label>
+                <label>Email <input type="email" name="email" placeholder="mymail@gmail.com"></label>
+                <label>Phone* <input type="tel" name="phone" placeholder="+52 1 55 1234 5678" required=""></label>
+                <label>Zip Code* <input type="number" name="zipcode" pattern="[0-9]{5}" title="zipcode"
+                        required=""></label>
+            </fieldset>
+
+            <fieldset name="storm-info" class="card">
+                <legend>&emsp;Storm Information&emsp;</legend>
+                <label>Storm Date<input type="date" name="storm-date"></label>
+                <label for="storm-type">Storm Type
+                    <input list="storm-type-list" name="storm-type">
+                    <datalist id="storm-type-list">
+                        <option value="Flash Flood">
+                        </option>
+                        <option value="Hail">
+                        </option>
+                        <option value="Hurricane">
+                        </option>
+                        <option value="Thunderstorm">
+                        </option>
+                        <option value="Tornado">
+                        </option>
+                    </datalist>
+                </label>
+
+                <label for="rating">Storm Severity
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="rateStorm(this.value)" onchange="rateStorm(this.value)">
+                    <span id="ratingvalue">5</span>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        </option>
+                        <option value="1">
+                        </option>
+                        <option value="2">
+                        </option>
+                        <option value="3">
+                        </option>
+                        <option value="4">
+                        </option>
+                        <option value="5">
+                        </option>
+                        <option value="6">
+                        </option>
+                        <option value="7">
+                        </option>
+                        <option value="8">
+                        </option>
+                        <option value="9">
+                        </option>
+                        <option value="10">
+                        </option>
+                    </datalist>
+                </label>
+
+                <label>Storm Region
+                    <select name="regions">
+                        <option value="">Select Region ▾</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                    </select>
+                </label>
+
+
+                <legend>Additional Information or Comments</legend>
+                <label>
+                    <textarea rows="5" cols="33"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset name="danger-level" class="card">
+                <legend>&emsp;Danger Level&emsp;</legend>
+                <div id="danger-options">
+                    <p>
+                        Are you in danger?
+                    </p>
+                    <div>
+                        <label><input type="radio" name="danger-level" value="yes"> Yes</label>
+                        <label><input type="radio" name="danger-level" value="no"> No</label>
+                        <label><input type="radio" name="danger-level" value="maybe"> Maybe</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Save report" id="submit-btn">
+        </form>
+
+        <div class="contact-information">
+            <section class="contact">
+                <h2>
+                    Contact Information
+                </h2>
+                <div>
+                    <p>
+                        Jose Alberto Soto
+                    </p>
+                    <p>
+                        +52 1 (55) 1309 3528
+                    </p>
+                    <p>
+                        sot21004@byui.edu
+                    </p>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook icon"></a>
+                    <a href="https://www.twitter.com/"><img src="./images/twitter.png" alt="Twitter icon"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="Youtube icon"></a>
+                </div>
+            </section>
+            <picture class="map">
+                <img src="images/map.jpg" alt="map">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="current-year"> &copy; </span> | Jose A. Soto | Mexico City | <a
+                href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="last-updated">Last Updated: </p>
+        <div class="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
