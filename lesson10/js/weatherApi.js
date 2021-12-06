@@ -1,5 +1,5 @@
-const weatherURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=92e8868f277c47300b3b3258e89d9053&lang=en&units=imperial"
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=92e8868f277c47300b3b3258e89d9053&lang=en&units=imperial"
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=92e8868f277c47300b3b3258e89d9053&lang=en&units=imperial"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=92e8868f277c47300b3b3258e89d9053&lang=en&units=imperial"
 let temperature = 0
 let windspeed  = 0
 let newDate = '';
