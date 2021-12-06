@@ -9,34 +9,34 @@
         content="Preston Town Page Start. WDD 230: Web Frontend Development at Brigham Young University Idaho">
     <title>Preston Town Page Start</title>
 
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="../weather/">
     <!-- phone -->
-    <link href="CSS/small.css" rel="stylesheet">
+    <link href="../weather/CSS/small.css" rel="stylesheet">
     <!-- tablet -->
-    <link href="CSS/medium.css" rel="stylesheet">
+    <link href="../weather/CSS/medium.css" rel="stylesheet">
     <!-- wide desktop -->
-    <link href="CSS/large.css" rel="stylesheet">
+    <link href="../weather/CSS/large.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <p id="banner">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
         <div class="name-logo">
-            <img src="images/weather-news.png" alt="Cloudy County Logo">
+            <img src="../weather/images/weather-news.png" alt="Cloudy County Logo">
             <h1>Cloudy County</h1>
         </div>
         <h2>Don't go out without an umbrella !</h2>
-        <img id="menu-logo" onclick="toggleMenu()" src="images/menu.svg" alt="Menu Logo">
+        <img id="menu-logo" onclick="toggleMenu()" src="../weather/images/menu.svg" alt="Menu Logo">
     </header>
 
     <nav>
         <ul id="nav-list">
-            <li class="selected-page"><a href="../lesson10/preston-10.html" class="active">Home</a></li>
-            <li><a href="../lesson10/preston-10.html">Preston</a></li>
+            <li class="selected-page"><a href="preston-10.html" class="active">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="../weather/stormcenter.html">Storm Center</a></li>
+            <li><a href="../weather/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
 
@@ -48,18 +48,19 @@
         </div>
         <div>
             <picture class="original-image">
-                <source srcset="images/original_small.jpeg" media="(max-width: 400px)">
-                <source srcset="images/original_medium.jpeg" media="(max-width: 800px)">
-                <source srcset="images/original_large.jpeg" media="(max-width: 1500px)">
-                <img src="images/original_large.jpeg" alt="Clouds over the mountains">
+                <source srcset="../weather/images/original_small.jpeg" media="(max-width: 400px)">
+                <source srcset="../weather/images/original_medium.jpeg" media="(max-width: 800px)">
+                <source srcset="../weather/images/original_large.jpeg" media="(max-width: 1500px)">
+                <img src="../weather/images/original_large.jpeg" alt="Clouds over the mountains">
             </picture>
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
+                <p>Current Condition: <span id="current-condition"></span></p>
                 <p>Currently: <span id="temperature">38</span>°F</p>
                 <p>Wind Chill: <span id="windchill">34</span>°F</p>
-                <p>High: 41°F</p>
-                <p>Humidity: 50%</p>
-                <p>Wind Speed: <span id="windspeed">5</span>mph</p>
+                <p>High: <span id="temp_max">41</span>°F</p>
+                <p>Humidity: <span id="humidity">34</span>%</p>
+                <p>Wind Speed: <span id="windspeed">5</span> mph</p>
             </section>
         </div>
         <div class="forecast">
@@ -70,27 +71,27 @@
 
                 <div class="forecast-day">
                     <span class="col-head">Monday</span>
-                    <img class="sun" src="images/sunny.png" alt="sun">
+                    <img class="sun" src="../weather/images/sunny.png" alt="sun">
                     <span class="data">5°C</span>
                 </div>
                 <div class="forecast-day">
                     <span class="col-head">Tuesday</span>
-                    <img class="sun" src="images/clear-sky.png" alt="sun">
+                    <img class="sun" src="../weather/images/clear-sky.png" alt="sun">
                     <span class="data">10°C</span>
                 </div>
                 <div class="forecast-day">
                     <span class="col-head">Wednesday</span>
-                    <img class="sun" src="images/clear-sky.png" alt="sun">
+                    <img class="sun" src="../weather/images/clear-sky.png" alt="sun">
                     <span class="data">10°C</span>
                 </div>
                 <div class="forecast-day">
                     <span class="col-head">Thursday</span>
-                    <img class="sun" src="images/downpour.png" alt="sun">
+                    <img class="sun" src="../weather/images/downpour.png" alt="sun">
                     <span class="data">10°C</span>
                 </div>
                 <div class="forecast-day">
                     <span class="col-head">Friday</span>
-                    <img class="sun" src="images/sunny.png" alt="sun">
+                    <img class="sun" src="../weather/images/sunny.png" alt="sun">
                     <span class="data">10°C</span>
                 </div>
             </div>
@@ -111,7 +112,7 @@
                     0%.
                     Scroll down for the full forecast.
                 </p>
-                <img class="article-img" src="images/grand_prix.jpg" alt="Mexico City Grand Prix">
+                <img class="article-img" src="../weather/images/grand_prix.jpg" alt="Mexico City Grand Prix">
                 <p class="attribution">
                     Photo by <a
                         href="https://unsplash.com/@jpvalery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jp
@@ -139,13 +140,16 @@
                     </p>
                 </div>
                 <div class="social">
-                    <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook icon"></a>
-                    <a href="https://www.twitter.com/"><img src="./images/twitter.png" alt="Twitter icon"></a>
-                    <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="Youtube icon"></a>
+                    <a href="https://www.facebook.com/"><img src="./../weather/images/facebook.png"
+                            alt="Facebook icon"></a>
+                    <a href="https://www.twitter.com/"><img src="./../weather/images/twitter.png"
+                            alt="Twitter icon"></a>
+                    <a href="https://www.youtube.com/"><img src="./../weather/images/youtube.png"
+                            alt="Youtube icon"></a>
                 </div>
             </section>
             <picture class="map">
-                <img src="images/map.jpg" alt="map">
+                <img src="../weather/images/map.jpg" alt="map">
             </picture>
         </div>
     </main>
@@ -157,8 +161,8 @@
         <div class="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
-    <script src="js/index.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="../weather/js/index.js"></script>
+    <script src="./js/weatherApi.js"></script>
 
 </body>
 
