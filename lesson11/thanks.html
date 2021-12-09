@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Storm reporting. WDD 230: Web Frontend Development at Brigham Young University Idaho">
+    <title>Preston Town Page Start</title>
+
+    <link rel="stylesheet" href="../weather/CSS/normalize.css">
+    <!-- phone -->
+    <link href="../weather/CSS/small.css" rel="stylesheet">
+    <!-- tablet -->
+    <link href="../weather/CSS/medium.css" rel="stylesheet">
+    <!-- wide desktop -->
+    <link href="../weather/CSS/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p id="banner">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        <div class="name-logo">
+            <img src="../weather/images/weather-news.png" alt="Cloudy County Logo">
+            <h1>Cloudy County</h1>
+        </div>
+        <h2>Don't go out without an umbrella !</h2>
+        <img id="menu-logo" onclick="toggleMenu()" src="../weather/images/menu.svg" alt="Menu Logo">
+    </header>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="preston.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="selected-page"><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-title">
+            <h2>
+                Thank you for your report!
+            </h2>
+            <p>
+                We will validate your information and send you a confirmation email
+            </p>
+        </div>
+
+        <div class="contact-information">
+            <section class="contact">
+                <h2>
+                    Contact Information
+                </h2>
+                <div>
+                    <p>
+                        Jose Alberto Soto
+                    </p>
+                    <p>
+                        +52 1 (55) 1309 3528
+                    </p>
+                    <p>
+                        sot21004@byui.edu
+                    </p>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><img src="./../weather/images/facebook.png"
+                            alt="Facebook icon"></a>
+                    <a href="https://www.twitter.com/"><img src="./../weather/images/twitter.png"
+                            alt="Twitter icon"></a>
+                    <a href="https://www.youtube.com/"><img src="./../weather/images/youtube.png"
+                            alt="Youtube icon"></a>
+                </div>
+            </section>
+            <picture class="map">
+                <img src="../weather/images/map.jpg" alt="map">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="current-year"> &copy; </span> | Jose A. Soto | Mexico City | <a
+                href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="last-updated">Last Updated: </p>
+        <div class="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
