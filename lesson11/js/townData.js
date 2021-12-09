@@ -10,7 +10,6 @@ let currentTown = null
 fetch(townDataURL).then((response) => response.json())
     .then(data => {
         data.towns.forEach(town => {
-            console.log(town)
             
             townCard = document.createElement("div")
             townCard.setAttribute('class', "gallery-card");
@@ -42,10 +41,6 @@ fetch(townDataURL).then((response) => response.json())
             townImage.setAttribute('src', "images/" + town.photo)
             townImage.setAttribute('alt',  "Picture of " + town.name);
             townCard.appendChild(townImage)
-            
-            
-
-            // <img class="gallery-home" src="../weather/images/weather_gallery/placeholder.svg"
-            // data-src="../weather/images/weather_gallery/gilan-province.jpg" alt="Gilan province Iran"> */
+                        
         })
     });

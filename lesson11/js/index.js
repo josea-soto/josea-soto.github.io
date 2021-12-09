@@ -19,7 +19,6 @@ function toggleMenu() {
 }
 
 function rateStorm(rating) {
-    console.log(rating)
     document.getElementById("ratingvalue").innerHTML = rating;
   }
 
