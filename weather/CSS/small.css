@@ -78,10 +78,15 @@ h3 {
 a {
     text-decoration: none;
     color: black;
+    padding: 2vw 0;
 }
 
 li:hover {
     background-color: #8ECAE6;
+}
+
+li a {
+    display: block;
 }
 
 ul {
@@ -99,7 +104,6 @@ ul {
 }
 
 li {
-    padding: 0.7em;
     font-size: 1em;
 }
 
@@ -251,6 +255,14 @@ nav ul.show-menu {
 .gallery-img {
     width: 100%;
     background: lightgrey;
+}
+
+.fixed-height {
+    height: 50vw;
+}
+
+.gallery-home {
+    width: 100%;
 }
 
 .visible {
