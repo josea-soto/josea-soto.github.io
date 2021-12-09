@@ -183,6 +183,7 @@ img {
     height: 50px;
 }
 
+#townEvents,
 .weather-summary,
 .forecast,
 .contact-information {
@@ -233,7 +234,7 @@ nav ul.show-menu {
 
 .gallery span {
     font-size: 0.5em;
-    display: none;
+    /* display: none; */
 }
 
 .gallery-card {

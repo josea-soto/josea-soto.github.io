@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Preston Town Page Start. WDD 230: Web Frontend Development at Brigham Young University Idaho">
-    <title>Preston Town Page Start</title>
+        content="Fish Haven Page. WDD 230: Web Frontend Development at Brigham Young University Idaho">
+    <title>Fish Haven</title>
 
     <link rel="stylesheet" href="../weather/CSS/normalize.css">
     <!-- phone -->
@@ -43,7 +43,7 @@
     <main>
         <div class="page-title">
             <h2>
-                Preston Idaho
+                Fish Haven
             </h2>
         </div>
         <div>
@@ -56,45 +56,23 @@
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <p>Current Condition: <span id="current-condition"></span></p>
-                <p>Currently: <span id="temperature">38</span>°C</p>
+                <p>Currently: <span id="temperature">38</span>°F</p>
                 <p>Wind Chill: <span id="windchill">34</span></p>
-                <p>High: <span id="temp_max">41</span>°C</p>
+                <p>High: <span id="temp_max">41</span>°F</p>
                 <p>Humidity: <span id="humidity">34</span>%</p>
                 <p>Wind Speed: <span id="windspeed">5</span> mph</p>
             </section>
         </div>
+
+        <div id="townEvents">
+            <h2>Upcoming Events</h2>
+        </div>
+
         <div class="forecast">
             <h2>
                 Five Day Forecast
             </h2>
-            <div id="forecast-table">
-
-                <div class="forecast-day">
-                    <span id="dayName1" class="col-head">Monday</span>
-                    <img class="sun" src="../weather/images/sunny.png" alt="sun">
-                    <span id="dayTemp1" class="data">5°C</span>
-                </div>
-                <div class="forecast-day">
-                    <span id="dayName2" class="col-head">Tuesday</span>
-                    <img class="sun" src="../weather/images/clear-sky.png" alt="sun">
-                    <span id="dayTemp2" class="data">10°C</span>
-                </div>
-                <div class="forecast-day">
-                    <span id="dayName3" class="col-head">Wednesday</span>
-                    <img class="sun" src="../weather/images/clear-sky.png" alt="sun">
-                    <span id="dayTemp3" class="data">10°C</span>
-                </div>
-                <div class="forecast-day">
-                    <span id="dayName4" class="col-head">Thursday</span>
-                    <img class="sun" src="../weather/images/downpour.png" alt="sun">
-                    <span id="dayTemp4" class="data">10°C</span>
-                </div>
-                <div class="forecast-day">
-                    <span id="dayName5" class="col-head">Friday</span>
-                    <img class="sun" src="../weather/images/sunny.png" alt="sun">
-                    <span id="dayTemp5" class="data">10°C</span>
-                </div>
-            </div>
+            <div id="forecast-table"></div>
 
             <div class="article">
                 <h3>Weather forecast for the Grand Prix</h3>

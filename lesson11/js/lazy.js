@@ -8,8 +8,8 @@ const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => { 
         image.removeAttribute('data-src');
-        image.parentElement.children[1].setAttribute("style", "display: block;")
-        image.parentElement.children[2].setAttribute("style", "display: block;")
+        // image.parentElement.children[1].setAttribute("style", "display: block;")
+        // image.parentElement.children[2].setAttribute("style", "display: block;")
     };
   };
 
