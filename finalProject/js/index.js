@@ -13,14 +13,18 @@ setTimeout(() => {
 function toggleMenu() {        
     document.getElementById("nav-list").classList.toggle("show-menu");
     
+    let hero = document.getElementById("hero")
     let menuImage = document.getElementById("menu-logo")
 
     if (menuImage.src.indexOf ("x.svg") >= 0) {
         menuImage.src = "./images/menu.svg";
+        hero.classList.remove("blur");
     }
     else 
     {
+        hero.classList.add("blur");
         menuImage.src = "./images/x.svg";
+        
     }
 }
 

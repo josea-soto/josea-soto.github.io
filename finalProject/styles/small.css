@@ -117,6 +117,10 @@ a {
     line-height: 10vw;
 }
 
+.blur {
+    filter: blur(7px);
+}
+
 .hl {
     font-size: 8vw;
     color: white;
