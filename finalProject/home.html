@@ -5,11 +5,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project Home</title>
+    <meta name="description"
+        content="Final Project WDD 230: Web Frontend Development at Brigham Young University Idaho">
+    <title>Scoots Home</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <!-- phone -->
+    <link href="./styles/small.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="name-logo">
+            <img src="./images/motorcycle.png" alt="Scoots Logo">
+            <h1>Scoots</h1>
+        </div>
+        <div onclick="toggleMenu()">
+            <img id="menu-logo" src="./images/menu.svg" alt="Menu Logo">
+        </div>
+    </header>
 
+    <nav>
+        <ul id="nav-list">
+            <li><a href="home.html" class="selected-page">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!--Call to action to make a rental reservation-->
+    <div id="hero">
+        <img id="hero-background"
+            src="https://images.unsplash.com/photo-1579493933703-70473cdf84f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80"
+            alt="">
+        <div id="hero-description">
+            <h2>
+                <span class="small-hl"> The friendliest and easiest</span>
+                <span class="hl">scooter</span>
+                <span class="hl">jeep</span>
+                <span class="small-hl">and</span>
+                <span class="medium-hl">all - terrain vehicles</span>
+                <span class="small-hl"> rental</span> <br>
+                <span class="small-hl"> in Cozumel</span>
+            </h2>
+        </div>
+        <div id="book-now">
+            <a href="reservations.html">Book now !</a>
+        </div>
+    </div>
+
+    <!--Summary information about the types of rentals-->
+    <section class="rentals">
+        <h3>
+            Type of Rentals
+        </h3>
+        <ul>
+            <li>
+                Honda Motor Scooters
+                <ul>
+                    <li>Honda Metropolitan (49cc)—1 person</li>
+                    <li>Honda Dio (110cc)—2 person</li>
+                    <li> Honda PCX150 (149cc)—2 person</li>
+                </ul>
+            </li>
+            <li>
+                ATV Side-by-Side
+                <ul>
+                    <li>Honda Pioneer 1000</li>
+                </ul>
+            </li>
+            <li>
+                Jeep Rentals
+                <ul>
+                    <li>4-door Jeep Wrangler—manual with A/C—5 people max</li>
+                    <li>2-door Jeep Wrangler—open air—manual—4 people max</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!--Images of the Island -->
+    <section class="island-images">
+    </section>
+
+    <!--Images of the rental facilities -->
+    <section class="facilities-images">
+    </section>
+
+    <!--Current weather information -->
+    <section class="weather-summary">
+        <h2>Weather Summary</h2>
+        <!--Current temperature -->
+        <p>Currently: <span id="temperature">38</span>°F</p>
+        <!--Current condition description -->
+        <p>Current Condition: <span id="current-condition"></span></p>
+        <!--Humidity -->
+        <p>Humidity: <span id="humidity">34</span>%</p>
+        <!--Forecasted temperature five days from current date at noon -->
+        <h2>
+            Forecast
+        </h2>
+        <div id="forecast-table"></div>
+    </section>
+
+    <!--Contact information  -->
+    <section class="contact">
+        <h2>
+            Contact Information
+        </h2>
+        <div>
+            <p>
+                Jose Alberto Soto
+            </p>
+            <p>
+                +52 1 (55) 1309 3528
+            </p>
+            <p>
+                sot21004@byui.edu
+            </p>
+        </div>
+        <!--Social media links -->
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook icon"></a>
+            <a href="https://www.twitter.com/"><img src="./images/twitter.png" alt="Twitter icon"></a>
+            <a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="Youtube icon"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p><span id="current-year"> &copy; </span> | Jose A. Soto | Mexico City | <a
+                href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="last-updated">Last Updated: </p>
+        <div class="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
