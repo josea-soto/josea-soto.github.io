@@ -342,6 +342,18 @@ td {
     text-align: center;
 }
 
+.info-services {
+    text-align: center;
+    padding: 2vw;
+    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
+    border-radius: 8px;
+    margin: 5vw 4vw;
+}
+
+.info-services li {
+    width: auto;
+}
+
 @media (max-width: 225px) {
     .name-logo h1 {
         display: none;

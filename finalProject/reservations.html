@@ -32,19 +32,67 @@
         </ul>
     </nav>
 
-    <!--Contains rental agreement information-->
+    <section class="info-services">
+        <!--Contains rental agreement information-->
+        <h2>
+            Information and Services
+        </h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at time of rental.</li>
+            <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+            <li>Fuel charge not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate requires 24 hour prior notification.</li>
+            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+            <li>Rentals may be returned to either location.</li>
+        </ul>
+    </section>
 
-    <!-- Form that collects rental details-->
-    <!-- date-->
-    <!-- period-->
-    <!-- rental type-->
-    <!-- number,-->
-    <!-- phone number,-->
-    <!-- name,-->
-    <!-- email,-->
-    <!-- home state or country,-->
-    <!-- cruise line if applicable,-->
-    <!-- special accommodations/comments such as the need and location of a drop-off request.-->
+    <section>
+        <form method="get" action="confirmation.html">
+            <fieldset name="client-info" class="card">
+
+                <legend>&emsp;Client Information&emsp;</legend>
+                <label>Name* <input type="text" name="fullname" pattern="[A-Z a-z]{5,}" title="fullname"
+                        required=""></label>
+                <label>Email <input type="email" name="email" placeholder="mymail@gmail.com"></label>
+                <label>Phone* <input type="tel" name="phone" placeholder="+52 1 55 1234 5678" required=""></label>
+                <label>Zip Code* <input type="number" name="zipcode" pattern="[0-9]{5}" title="zipcode"
+                        required=""></label>
+                <label>State <input type="text" name="state" pattern="[A-Z a-z]{5,}" title="state"></label>
+                <label>Country <input type="text" name="country" pattern="[A-Z a-z]{5,}" title="country"></label>
+            </fieldset>
+
+            <fieldset name="reservation-info" class="card">
+                <legend>&emsp;Reservation Information&emsp;</legend>
+
+                <label>Desired date from <input type="date" name="from-date"></label>
+                <label>Desired date to <input type="date" name="to-date"></label>
+
+                <label>Vehicle Type
+                    <select name="types">
+                        <option value="">Vehicle Type ▾</option>
+                        <option value="scooters">Scooters</option>
+                        <option value="atvs">ATVs</option>
+                        <option value="jeep">Jeep</option>
+                    </select>
+                </label>
+
+                <label>Cruiseline<input type="text" name="cruiseline" pattern="[A-Z a-z]{5,}" ti tle="cruiseline"
+                        required=""></label>
+
+                <legend>Special accommodations or comments</legend>
+                <label>
+                    <textarea rows="5" cols="33"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Save report" id="submit-btn">
+        </form>
+    </section>
 
     <footer>
         <p><span id="current-year"> &copy; </span> | Jose A. Soto | Mexico City | <a
