@@ -53,20 +53,36 @@
 
     <section>
         <form method="get" action="confirmation.html">
-            <fieldset name="client-info" class="card">
+            <fieldset name="client-info" class="reservation-section">
 
                 <legend>&emsp;Client Information&emsp;</legend>
-                <label>Name* <input type="text" name="fullname" pattern="[A-Z a-z]{5,}" title="fullname"
-                        required=""></label>
-                <label>Email <input type="email" name="email" placeholder="mymail@gmail.com"></label>
-                <label>Phone* <input type="tel" name="phone" placeholder="+52 1 55 1234 5678" required=""></label>
-                <label>Zip Code* <input type="number" name="zipcode" pattern="[0-9]{5}" title="zipcode"
-                        required=""></label>
-                <label>State <input type="text" name="state" pattern="[A-Z a-z]{5,}" title="state"></label>
-                <label>Country <input type="text" name="country" pattern="[A-Z a-z]{5,}" title="country"></label>
+                <label>
+                    <span>Name*</span>
+                    <input type="text" name="fullname" pattern="[A-Z a-z]{5,}" title="fullname" required="">
+                </label>
+                <label>
+                    <span> Email</span>
+                    <input type="email" name="email" placeholder="mymail@gmail.com">
+                </label>
+                <label>
+                    <span> Phone*</span>
+                    <input type="tel" name="phone" placeholder="+52 1 55 1234 5678" required="">
+                </label>
+                <label>
+                    <span>Zip Code* </span>
+                    <input type="number" name="zipcode" pattern="[0-9]{5}" title="zipcode" required="">
+                </label>
+                <label>
+                    <span>State </span>
+                    <input type="text" name="state" pattern="[A-Z a-z]{5,}" title="state">
+                </label>
+                <label>
+                    <span>Country </span>
+                    <input type="text" name="country" pattern="[A-Z a-z]{5,}" title="country">
+                </label>
             </fieldset>
 
-            <fieldset name="reservation-info" class="card">
+            <fieldset name="reservation-info" class="reservation-section">
                 <legend>&emsp;Reservation Information&emsp;</legend>
 
                 <label>Desired date from <input type="date" name="from-date"></label>
@@ -74,15 +90,14 @@
 
                 <label>Vehicle Type
                     <select name="types">
-                        <option value="">Vehicle Type ▾</option>
-                        <option value="scooters">Scooters</option>
-                        <option value="atvs">ATVs</option>
+                        <option value="scooters">Scooter</option>
+                        <option value="atvs">ATV</option>
                         <option value="jeep">Jeep</option>
                     </select>
                 </label>
 
-                <label>Cruiseline<input type="text" name="cruiseline" pattern="[A-Z a-z]{5,}" ti tle="cruiseline"
-                        required=""></label>
+                <label>Cruiseline<input type="text" name="cruiseline" pattern="[A-Z a-z]{5,}" ti
+                        tle="cruiseline"></label>
 
                 <legend>Special accommodations or comments</legend>
                 <label>
