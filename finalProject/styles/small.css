@@ -18,14 +18,14 @@ header {
 .name-logo {
     display: flex;
     flex-direction: row;
-    padding: 4vw;
+    padding: 1vw;
 }
 
 #menu-logo {
     position: absolute;
     width: 50px;
     right: 4vw;
-    top: 6vw;
+    top: 2vw;
 }
 
 body {
@@ -110,6 +110,8 @@ a {
 
 #hero {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #hero h2 {
@@ -122,27 +124,36 @@ a {
 }
 
 .hl {
-    font-size: 8vw;
-    color: white;
-    background-color: #023047;
-    padding: 0 5vw 1vw;
+    font-size: 7vw;
+    /* color: white;
+    background-color: #023047; */
+    color: #023047;
+    background-color: white;
+    padding: 0 5vw;
     border-radius: 10vw;
+    /* border: 3px solid #023047; */
 }
 
 .medium-hl {
     font-size: 5vw;
-    color: white;
-    background-color: #023047;
+    color: #023047;
+    background-color: white;
+    /* color: white;
+    background-color: #023047; */
     padding: 0 5vw;
     border-radius: 10vw;
+    /* border: 3px solid #023047; */
 }
 
 .small-hl {
     font-size: 3vw;
-    color: white;
-    background-color: #006c67;
+    color: #023047;
+    background-color: white;
+    /* color: white;
+    background-color: #023047; */
     padding: 0 5vw;
     border-radius: 10vw;
+    /* border: 3px solid #023047; */
 }
 
 #hero-description {
@@ -152,22 +163,31 @@ a {
     color: white;
 }
 
+#hero-description h2:nth-child(2) {
+    margin-top: -7vw
+}
+
 #book-now {
     position: absolute;
-    background: white;
-    color: #023047;
+    /* background: white;
+    color: #023047; */
+    color: white;
+    background-color: #023047;
     padding: 1vw 5vw;
     border-radius: 50px;
     top: 65vw;
-    right: 34vw;
+    right: 36vw;
     font-family: Comfortaa, 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 3vw;
-    border: 0.4vw solid #023047;
+    /* border: 3px solid #023047; */
+    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
+    /* box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6); */
 }
 
 #hero div a {
-    color: #023047;
+    /* color: #023047; */
+    color: white;
 }
 
 
