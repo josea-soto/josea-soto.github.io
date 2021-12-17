@@ -376,9 +376,17 @@ label {
     font-family: Comfortaa, 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 3vw;
-    width: 30vw;
+    width: 35vw;
     text-align: center;
     margin: auto;
+}
+
+iframe {
+    width: 92vw;
+    display: block;
+    margin: auto;
+    margin-top: 5vw;
+    border-radius: 8px;
 }
 
 @media (max-width: 225px) {

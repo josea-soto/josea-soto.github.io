@@ -32,13 +32,44 @@
         </ul>
     </nav>
 
-    <!--Essential rental and contact information-->
-    <!--Google map with two locations in Cozumel-->
+    <h2>
+        Our locations
+    </h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.9249623499363!2d-86.9494743850772!3d20.509302110684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59e377d908bf%3A0x8fc774b57efead67!2sJEEP%20RENTAL!5e0!3m2!1sen!2smx!4v1639752377465!5m2!1sen!2smx"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-    <!--Basic contact us form-->
-    <!--name-->
-    <!--email-->
-    <!--comment-->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.9784119750702!2d-86.95574408507727!3d20.50711121075692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59ce98bc6a2d%3A0x3a52daa7d921160d!2sSolyMar%20Car%20and%20Scooter%20rental!5e0!3m2!1sen!2smx!4v1639752410581!5m2!1sen!2smx"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <section>
+        <form method="get" action="contact-request.html">
+            <fieldset name="client-info" class="reservation-section">
+
+                <legend>&emsp;Client Information&emsp;</legend>
+                <label>
+                    <span>Name*</span>
+                    <input type="text" name="fullname" pattern="[A-Z a-z]{5,}" title="fullname" required="">
+                </label>
+                <label>
+                    <span> Email</span>
+                    <input type="email" name="email" placeholder="mymail@gmail.com">
+                </label>
+                <label>
+                    <span> Phone*</span>
+                    <input type="tel" name="phone" placeholder="+52 1 55 1234 5678" required="">
+                </label>
+
+                <legend>Please let us know your comments</legend>
+                <label>
+                    <textarea rows="5" cols="33"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send comments" id="submit-btn">
+        </form>
+    </section>
 
     <footer>
         <p><span id="current-year"> &copy; </span> | Jose A. Soto | Mexico City | <a
