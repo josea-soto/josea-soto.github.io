@@ -281,6 +281,10 @@ nav ul.show-menu {
     margin: 2vw;
 }
 
+.rentals {
+    margin-bottom: 8vw;
+}
+
 .rentals ul {
     padding: 0;
 }
@@ -325,6 +329,17 @@ nav ul.show-menu {
     padding: 2vw;
     box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
     border-radius: 8px;
+}
+
+table {
+    width: 96vw;
+    border-collapse: collapse;
+    border: 1px solid #023047;
+    margin: auto;
+}
+
+td {
+    text-align: center;
 }
 
 @media (max-width: 225px) {
