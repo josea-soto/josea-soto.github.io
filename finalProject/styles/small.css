@@ -389,6 +389,10 @@ iframe {
     border-radius: 8px;
 }
 
+hr {
+    margin: 5vw;
+}
+
 @media (max-width: 225px) {
     .name-logo h1 {
         display: none;
