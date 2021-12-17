@@ -169,20 +169,22 @@ a {
 
 #book-now {
     position: absolute;
-    /* background: white;
-    color: #023047; */
+    top: 65vw;
+    right: 36vw;
+}
+
+.button {
     color: white;
     background-color: #023047;
     padding: 1vw 5vw;
     border-radius: 50px;
-    top: 65vw;
-    right: 36vw;
     font-family: Comfortaa, 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 3vw;
-    /* border: 3px solid #023047; */
-    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
-    /* box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6); */
+    /* box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5); */
+    width: 20vw;
+    text-align: center;
+    margin: auto;
 }
 
 #hero div a {
@@ -196,6 +198,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 2vw;
+    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
+    border-radius: 8px;
+    margin: 5vw 4vw;
+
+
 }
 
 footer {
@@ -256,11 +265,12 @@ img {
 }
 
 .weather-summary {
+    text-align: center;
+    padding: 2vw;
+    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
     border-radius: 8px;
-    margin: 4vw;
-    padding: 4vw;
-    box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
-    text-align: center
+    margin: 5vw 4vw;
+
 }
 
 nav ul.show-menu {
@@ -274,6 +284,21 @@ nav ul.show-menu {
 
 .rentals h2 {
     font-size: 1.5em;
+}
+
+.rentals-summary {
+    padding: 2vw;
+    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
+    border-radius: 8px;
+    margin: 5vw 4vw;
+}
+
+.rentals-summary li:last-child {
+    margin-bottom: 4vw;
+}
+
+.rentals-summary li {
+    width: 100%;
 }
 
 .vehicle-model {
