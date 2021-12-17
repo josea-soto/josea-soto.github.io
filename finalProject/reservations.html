@@ -52,6 +52,9 @@
     </section>
 
     <section>
+        <h2>
+            Reservation Form
+        </h2>
         <form method="get" action="confirmation.html">
             <fieldset name="client-info" class="reservation-section">
 
@@ -70,7 +73,7 @@
                 </label>
                 <label>
                     <span>Zip Code* </span>
-                    <input type="number" name="zipcode" pattern="[0-9]{5}" title="zipcode" required="">
+                    <input type="number" name="zipcode" title="zipcode" required="">
                 </label>
                 <label>
                     <span>State </span>
@@ -96,11 +99,10 @@
                     </select>
                 </label>
 
-                <label>Cruiseline<input type="text" name="cruiseline" pattern="[A-Z a-z]{5,}" ti
-                        tle="cruiseline"></label>
+                <label>Cruiseline<input type="text" name="cruiseline" pattern="[A-Z a-z]{5,}"
+                        title="cruiseline"></label>
 
-                <legend>Special accommodations or comments</legend>
-                <label>
+                <label>Special accommodations or comments
                     <textarea rows="5" cols="33"></textarea>
                 </label>
             </fieldset>
