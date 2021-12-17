@@ -90,7 +90,7 @@ li {
     font-size: 1em;
 }
 
-li:hover {
+nav li:hover {
     border: 3px solid;
     border-radius: 50px;
 }
@@ -264,13 +264,16 @@ img {
     height: 50px;
 }
 
+.icon-img {
+    width: 50px;
+}
+
 .weather-summary {
     text-align: center;
     padding: 2vw;
     box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
     border-radius: 8px;
     margin: 5vw 4vw;
-
 }
 
 nav ul.show-menu {
@@ -291,6 +294,11 @@ nav ul.show-menu {
     box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
     border-radius: 8px;
     margin: 5vw 4vw;
+    text-align: center;
+}
+
+.rentals-summary :not(img) :not(h2) {
+    text-align: left;
 }
 
 .rentals-summary li:last-child {
@@ -299,6 +307,10 @@ nav ul.show-menu {
 
 .rentals-summary li {
     width: 100%;
+}
+
+.rentals-summary img {
+    text-align: center;
 }
 
 .vehicle-model {
@@ -313,10 +325,6 @@ nav ul.show-menu {
     padding: 2vw;
     box-shadow: 0 4px 8px 0 rgb(2 48 71 / 20%);
     border-radius: 8px;
-}
-
-.card img {
-    /* width: 25vw; */
 }
 
 @media (max-width: 225px) {
