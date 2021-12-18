@@ -10,6 +10,10 @@ setTimeout(() => {
 }, 10)
 
 
+function goHome(){
+    window.location.href = './home.html';
+}
+
 function toggleMenu() {        
     document.getElementById("nav-list").classList.toggle("show-menu");
     
