@@ -192,7 +192,9 @@ a {
     color: white;
 }
 
-
+.forecast-day img {
+    width: 50px;
+}
 
 .contact {
     display: flex;
