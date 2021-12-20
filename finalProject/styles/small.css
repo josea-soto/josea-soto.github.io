@@ -393,6 +393,29 @@ hr {
     margin: 5vw;
 }
 
+.activity {
+    box-shadow: 0px 10px 8px rgba(2, 48, 71, 0.5);
+    padding: 2vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+}
+
+.activity div {
+    align-self: center;
+}
+
+.activity img {
+    width: 43vw;
+    border-radius: 16px;
+}
+
+.activity p {
+    text-align: justify;
+    padding: 2vw
+}
+
 @media (max-width: 225px) {
     .name-logo h1 {
         display: none;
